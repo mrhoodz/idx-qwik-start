@@ -30,9 +30,7 @@
   },
   "dependencies": {
     "@react-email/components": "0.0.32",
-    "@react-email/render": "1.0.4",
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "@react-email/render": "1.0.4"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.12.0",
