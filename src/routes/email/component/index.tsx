@@ -2,23 +2,16 @@
 
 import { type RequestHandler } from '@builder.io/qwik-city';
 import { render } from '@react-email/render';
-import NotionMagicLinkEmail from '~/components/emails/notion-magic-link';
+import KoalaWelcomeEmail from '~/components/emails/koala-welcome';
  
 export const onRequest: RequestHandler = async (request) => {
 
 
-  const html = await render(<NotionMagicLinkEmail loginCode='this is the login code' />, {
+  const html = await render(<KoalaWelcomeEmail userFirstname='Tinotenda Muringami'/>, {
     pretty: true,
+    
   });
 
 
 request.html(200, html)
 };
- 
-// export default component$(() => {
-//   return <div>You are logged in.</div>;
-// });
- 
-// function isLoggedIn() {
-//   return true; // Mock login as true
-// }
