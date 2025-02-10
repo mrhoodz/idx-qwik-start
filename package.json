@@ -30,7 +30,8 @@
   },
   "dependencies": {
     "@react-email/components": "0.0.32",
-    "@react-email/render": "1.0.4"
+    "@react-email/render": "1.0.4",
+    "@types/chrome": "^0.0.304"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.12.0",
